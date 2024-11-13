@@ -21,8 +21,7 @@ body {
     text-align: center;
     transition: transform 0.3s ease;
     animation: fadeIn 0.6s ease;
-    margin-top: auto; /* Centers vertically */
-    margin-bottom: auto;
+    margin: auto; /* Ensures centering */
 }
 
 .container:hover {
@@ -114,8 +113,7 @@ body {
     .container {
         padding: 15px;
         width: 80%;
-        margin-top: auto; /* Centers vertically */
-        margin-bottom: auto;
+        margin: auto; /* Ensures centering */
     }
     
     .container h2 {
@@ -134,8 +132,7 @@ body {
     .container {
         padding: 12px;
         width: 75%;
-        margin-top: auto; /* Centers vertically */
-        margin-bottom: auto;
+        margin: auto; /* Ensures centering */
     }
     
     .container h2 {
