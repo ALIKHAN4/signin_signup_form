@@ -128,7 +128,7 @@ body {
 @media (max-width: 480px) {
     .container {
         padding: 12px;
-        width: 85%;
+        width: 75%;
     }
     
     .container h2 {
