@@ -8,6 +8,7 @@ body {
     margin: 0;
     background: #121212; /* Solid dark background */
     color: #e0e0e0;
+    overflow: hidden; /* Prevents extra space on mobile */
 }
 
 .container {
@@ -20,6 +21,7 @@ body {
     text-align: center;
     transition: transform 0.3s ease;
     animation: fadeIn 0.6s ease;
+    margin: auto; /* Ensures centering */
 }
 
 .container:hover {
@@ -111,6 +113,7 @@ body {
     .container {
         padding: 15px;
         width: 80%;
+        margin: auto; /* Ensures centering */
     }
     
     .container h2 {
@@ -129,6 +132,7 @@ body {
     .container {
         padding: 12px;
         width: 75%;
+        margin: auto; /* Ensures centering */
     }
     
     .container h2 {
