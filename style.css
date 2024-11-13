@@ -1,21 +1,14 @@
 /* General Styles */
-body, html {
+body {
     font-family: Arial, sans-serif;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #121212;
+    background: #121212; /* Solid dark background */
     color: #e0e0e0;
-}
-
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
+    overflow: hidden; /* Prevents extra space on mobile */
 }
 
 .container {
@@ -28,6 +21,8 @@ body, html {
     text-align: center;
     transition: transform 0.3s ease;
     animation: fadeIn 0.6s ease;
+    margin-top: auto; /* Centers vertically */
+    margin-bottom: auto;
 }
 
 .container:hover {
@@ -47,28 +42,29 @@ body, html {
 .container input[type="password"] {
     width: 100%;
     padding: 12px;
-    margin: 8px 0;
-    border: 1px solid #555;
+    margin: 8px 0; /* Reduced margin for compactness */
+    border: 1px solid #555; /* Darker gray border */
     border-radius: 25px;
     font-size: 14px;
-    background-color: #2a2a2a;
-    color: #e0e0e0;
+    background-color: #2a2a2a; /* Medium-dark gray for inputs */
+    color: #e0e0e0; /* Light text color */
     transition: all 0.3s ease;
+    box-sizing: border-box;
 }
 
 .container input[type="text"]:focus,
 .container input[type="email"]:focus,
 .container input[type="password"]:focus {
-    border-color: #4caf50;
-    background-color: #333;
+    border-color: #4caf50; /* Green accent color on focus */
+    background-color: #333; /* Slightly lighter background on focus */
     outline: none;
-    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5); /* Soft green focus effect */
 }
 
 .container button {
     width: 100%;
     padding: 12px;
-    background-color: #4caf50;
+    background-color: #4caf50; /* Green accent color for button */
     color: #fff;
     border: none;
     border-radius: 25px;
@@ -81,7 +77,7 @@ body, html {
 }
 
 .container button:hover {
-    background-color: #388e3c;
+    background-color: #388e3c; /* Darker green on hover */
     transform: translateY(-2px);
     box-shadow: 0 8px 15px rgba(56, 142, 60, 0.3);
 }
@@ -89,7 +85,7 @@ body, html {
 .container .link {
     margin-top: 15px;
     display: block;
-    color: #4caf50;
+    color: #4caf50; /* Green for link */
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
@@ -97,7 +93,7 @@ body, html {
 }
 
 .container .link:hover {
-    color: #81c784;
+    color: #81c784; /* Lighter green on hover */
     text-decoration: underline;
 }
 
@@ -118,6 +114,8 @@ body, html {
     .container {
         padding: 15px;
         width: 80%;
+        margin-top: auto; /* Centers vertically */
+        margin-bottom: auto;
     }
     
     .container h2 {
@@ -136,24 +134,26 @@ body, html {
     .container {
         padding: 12px;
         width: 75%;
+        margin-top: auto; /* Centers vertically */
+        margin-bottom: auto;
     }
     
     .container h2 {
         font-size: 20px;
-        margin-bottom: 15px;
+        margin-bottom: 15px; /* Reduced spacing for a compact look */
     }
 
     .container input[type="text"],
     .container input[type="email"],
     .container input[type="password"] {
         font-size: 13px;
-        padding: 10px;
-        margin: 6px 0;
+        padding: 10px; /* Adjust padding for smaller screens */
+        margin: 6px 0; /* Reduced margin for compactness */
     }
 
     .container button {
         font-size: 15px;
-        padding: 10px;
+        padding: 10px; /* Adjust button padding */
     }
     
     .container .link {
